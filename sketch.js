@@ -13,7 +13,8 @@ let win = 0;
 let starSize;
 
 function setup() {
-  createCanvas(cols * w, rows * w + w);
+  var canvas = createCanvas(cols * w, rows * w + w);
+  canvas.parent('portrait');
 }
 
 function hasWon() {
